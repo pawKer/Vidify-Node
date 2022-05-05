@@ -10,6 +10,8 @@
 
 ## 🚀 Quick start
 
+This is the node version of my other project [Vidify](https://github.com/pawKer/Vidify) which was done in Python.
+
 You can just download the latest executable file for your OS from [here](https://github.com/pawKer/Vidify-Node/releases/latest).
 
 ## 🔧 Running via Node
