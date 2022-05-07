@@ -14,6 +14,8 @@ This is the node version of my other project [Vidify](https://github.com/pawKer/
 
 You can just download the latest executable file for your OS from [here](https://github.com/pawKer/Vidify-Node/releases/latest).
 
+For the Mac version you might need to give the file executable permissions first using `chmod +x <file-name>` in the terminal and also allow it to run in the Security settings.
+
 ## 🔧 Running via Node
 
 To run via Node you just need to pull the repo locally and do `npm install` and then `node index.js`.
