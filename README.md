@@ -10,7 +10,11 @@
 
 ## 🚀 Quick start
 
+This is the node version of my other project [Vidify](https://github.com/pawKer/Vidify) which was done in Python.
+
 You can just download the latest executable file for your OS from [here](https://github.com/pawKer/Vidify-Node/releases/latest).
+
+For the Mac version you might need to give the file executable permissions first using `chmod +x <file-name>` in the terminal and also allow it to run in the Security settings.
 
 ## 🔧 Running via Node
 
