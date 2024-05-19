@@ -27,7 +27,7 @@
     "express": "^4.17.3",
     "open": "^8.4.0",
     "spotify-playing": "^1.0.8",
-    "ytsr": "^3.8.0"
+    "youtube-search-api": "^1.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",

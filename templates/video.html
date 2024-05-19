@@ -10,7 +10,7 @@
     <!-- Main video frame for youtube video -->
     <div class="video-container">
         <div class="h_iframe">
-            <iframe id="video_frame" class="videoContainer__video" width="1920" height="1080" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video_frame" class="videoContainer__video" src="" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <script>
@@ -34,7 +34,7 @@
             var video_frame = document.getElementById("video_frame");
             if (currentId != previousId) {
                 console.log("Changing src")
-                video_frame.src = "https://www.youtube.com/embed/" + currentId + "?rel=0&autoplay=1&controls=0&enablejsapi=1&version=3&playerapiid=ytplayer&loop=1&mute=1";
+                video_frame.src = "https://www.youtube.com/embed/" + currentId + "?rel=0&autoplay=1&controls=0&enablejsapi=1&version=3&playerapiid=ytplayer&loop=1&mute=1&iv_load_policy=3&vq=hd1080p";
                 previousId = currentId;
             }
 

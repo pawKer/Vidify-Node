@@ -1,8 +1,8 @@
 import playing from "spotify-playing";
 import express from "express";
 import path from "path";
-import ytsr from "ytsr";
 import open from "open";
+import youtubesearchapi from "youtube-search-api";
 
 let alt_dirname = path.resolve();
 /* 
@@ -40,7 +40,7 @@ app.get("/api/", (req, res) => {
         });
       } else {
         return res.send({
-          youtubeId: "GfKs8oNP9m8",
+          youtubeId: "lrf-GAYUOkQ",
           isPlaying: 1,
         });
       }
@@ -48,11 +48,14 @@ app.get("/api/", (req, res) => {
 
     console.log(curr_song, now);
 
-    if (curr_song.artist != now.artist && curr_song.song != now.song) {
+    if (curr_song.song != now.song || curr_song.artist != now.artist) {
       console.log("Need to fetch from youtube-dl");
       curr_song = now;
-      const resp = await ytsr(`${now.artist} - ${now.song}`, { limit: 5 });
-      console.log(resp.items[0].id);
+      const resp = await youtubesearchapi.GetListByKeyword(
+        `${now.artist} - ${now.song}`,
+        false,
+        5
+      );
 
       curr_song.url = resp.items[0].id;
       return res.send({
